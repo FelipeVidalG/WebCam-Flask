@@ -33,6 +33,6 @@ def video_feed():
     return Response(generate(), mimetype= "multipart/x-mixed-replace; boundary=frame")
 
 if __name__ == "__main__":
-    app.run(host='192.168.10.151',debug=False) 
+    app.run(host='0.0.0.0',debug=False) 
 # Host é o comando para colocar o ip da máquina.
 cap.release()
